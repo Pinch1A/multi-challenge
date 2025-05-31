@@ -1,0 +1,17 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently -n homepage,react,vue -c blue,cyan,green \"pnpm --filter @challenge/homepage dev --port 5173\" \"pnpm --filter @challenge/react dev --port 5174\" \"pnpm --filter @challenge/vue dev --port 5175\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "concurrently": "^9.1.2"
+  }
+}

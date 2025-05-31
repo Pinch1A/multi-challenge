@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@myorg/tailwind-config": ["packages/tailwind-config"],
+      "@myorg/tailwind-config/*": ["packages/tailwind-config/*"],
+      "@shared": ["packages/shared"],
+      "@shared/*": ["packages/shared/*"],
+      "@types": ["packages/shared/types/index.ts"]
+    },
+    "types": ["node"]
+  }
+}
